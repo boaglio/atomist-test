@@ -1,0 +1,20 @@
+# generator info
+name: Spring Boot Rest Microservice
+group: atomist-project-templates
+artifact: spring-rest-service
+version: 3.1.0
+
+# backing git repo
+repo: git@github.com:atomist-project-templates/spring-rest-service.git
+branch: master
+sha: 223dfdadb0df5c58b6699103751f13374bd8924c
+
+# parameter values
+project_name: atomist-test
+artifact_id: atomist-test
+group_id: boaglio
+version: 0.0.1-SNAPSHOT
+description: atomist
+root_package: com.boaglio
+service_class_name: Services
+
