@@ -1,4 +1,4 @@
-Some(package com.boaglio;
+ package com.boaglio;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
@@ -15,9 +15,9 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@SpringBootTest(classes = ServicesApplication.class, properties = { "server.port=0", "spring.cloud.bus.enabled=false", "spring.cloud.discovery.enabled=false", "spring.cloud.consul.enabled=false" })
+@SpringBootTest(classes = SpringRestApplication .class, properties = { "server.port=0", "spring.cloud.bus.enabled=false", "spring.cloud.discovery.enabled=false", "spring.cloud.consul.enabled=false" })
 @WebAppConfiguration
-public class ServicesOutOfContainerIntegrationTests {
+public class SpringRestOutOfContainerIntegrationTests {
 
     private MockMvc mockMvc;
 
@@ -34,4 +34,4 @@ public class ServicesOutOfContainerIntegrationTests {
         mockMvc.perform(get("/")).andExpect(status().isOk()).andExpect(content().contentType("text/plain;charset=UTF-8")).andExpect(content().string("Hello REST Microservice World")).andReturn();
     }
 }
-)
+ 

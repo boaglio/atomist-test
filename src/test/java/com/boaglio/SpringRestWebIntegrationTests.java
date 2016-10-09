@@ -1,4 +1,4 @@
-Some(package com.boaglio;
+ package com.boaglio;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -8,8 +8,8 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.web.client.RestTemplate;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@SpringBootTest(classes = ServicesApplication.class, webEnvironment = WebEnvironment.DEFINED_PORT)
-public class ServicesWebIntegrationTests {
+@SpringBootTest(classes = SpringRestApplication.class, webEnvironment = WebEnvironment.DEFINED_PORT)
+public class SpringRestWebIntegrationTests {
 
     private static final int PORT = 8080;
 
@@ -24,4 +24,4 @@ public class ServicesWebIntegrationTests {
     // Use RestTemplate to hit chosen URLs
     }
 }
-)
+ 

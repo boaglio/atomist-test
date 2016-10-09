@@ -1,4 +1,4 @@
-Some(package com.boaglio;
+ package com.boaglio;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -11,4 +11,4 @@ public class HomeController {
         return "Hello REST Microservice World";
     }
 }
-)
+ 
